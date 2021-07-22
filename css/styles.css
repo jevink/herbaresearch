@@ -49,7 +49,7 @@ a:hover {
 
 /* Nav Bar Section */
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar navbar-dark .navbar-nav .nav-link {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -62,11 +62,13 @@ a:hover {
 /* Title Section */
 
 #title .container-fluid {
+  text-align: left;
   background-color: #FF4C68;
   padding: 10% 16% 8%;
 }
 
 .title-div {
+  padding-top: 64px; /* necessary padding because of the nav bar */
   text-align: left;
 }
 

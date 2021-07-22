@@ -1,0 +1,214 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #1D9ECF;
+}
+
+a:hover {
+  color: #78A2CC;
+}
+
+.container-fluid {
+  padding: 6% 16%;
+}
+
+.uncolored-section {
+  background-color: white;
+}
+
+/* Brand Section */
+
+.brand-one {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.brand-two {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+/* Nav Bar Section */
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.nav-item { /* nav button */
+  padding: 0 24px 0 0;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+  background-color: #FF4C68;
+  padding: 10% 16% 8%;
+}
+
+.title-div {
+  text-align: left;
+}
+
+.title-image {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  transform: rotate(25deg);
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-box { /* padding around the exterior of the feature boxes */
+  padding: 5%;
+}
+
+.feature-desc {
+  color: #8F8F8F;
+}
+
+.feature-icon {
+  color: #EF8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+  color: #FF4C68;
+}
+
+/* Products Carousel Section */
+
+#products {
+  background-color: #EF8172;
+}
+
+/* Contact Card-deck Section */
+
+#contact {
+  padding: 100px 8%;
+}
+
+.contact-column { /* padding around the exterior of the contact cards */
+  padding: 3% 1.2%;
+}
+
+.card {
+  padding: 8px; /* padding between the contact card's contents and its border */
+  max-width: none;
+  text-align: left;
+  text-overflow: initial;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.contact-icon {
+  color: #FF4C68;
+}
+
+.contact-icon:hover {
+  color: #EF8172;
+}
+
+.contact-desc {
+  padding-left: 1rem;
+}
+
+/* Footer Section */
+
+#footer .container-fluid {
+  padding: 2%;
+}
+
+/* Responsive */
+
+@media (max-width: 1280px) {
+  .title-div {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .contact-div { /* size of contact icons */
+    font-size: 0.75rem;
+  }
+
+  #contact {
+    padding: 100px 3.2%;
+  }
+
+  .contact-column { /* padding around the exterior of the contact cards */
+    padding: 3% 0.4%;
+  }
+}
+
+@media (max-width: 991px) {
+  .brand-one {
+    font-size: 1.6rem;
+  }
+
+  #title {
+    word-break: break-word;
+  }
+
+  .title-text {
+    text-align: center;
+  }
+
+  .title-image {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    width: 240px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-title {
+    margin-bottom: 48px;
+  }
+
+  .contact-div { /* size of contact icons */
+    font-size: 0.72rem;
+  }
+
+  #contact {
+    padding: 100px 8%;
+  }
+
+  .contact-column { /* padding around the exterior of the contact cards */
+    padding: 3% 1.2%;
+  }
+}

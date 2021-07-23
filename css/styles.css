@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size:calc(32px + 1vw);
   line-height: 1.5;
   font-weight: 900;
 }
@@ -63,7 +63,7 @@ a:hover {
 
 #title .container-fluid {
   text-align: left;
-  background-color: #FF4C68;
+  background-color: #5DC69D;
   padding: 10% 16% 8%;
 }
 
@@ -73,7 +73,8 @@ a:hover {
 }
 
 .title-image {
-  width: 350px;
+  width: 28vw;
+  max-width: 350px;
   height: auto;
   position: absolute;
   transform: rotate(25deg);
@@ -94,28 +95,60 @@ a:hover {
 }
 
 .feature-icon {
-  color: #EF8172;
+  color: #5DC69D;
   margin-bottom: 1rem;
 }
 
 .feature-icon:hover {
-  color: #FF4C68;
+  color: #6DCBA6;
 }
 
 /* Products Carousel Section */
 
 #products {
-  background-color: #EF8172;
+  background-color: #6DCBA6;
+  position: relative;
+}
+
+#products .container-fluid {
+  padding: 6% 16%;
+}
+
+.product-image {
+  position: absolute;
+  right: 10vw;
+  width: 240px;
+  height: 480px;
+}
+
+.product-div {
+  height: 480px;
+  position: relative;
+  left: 26vw;
+}
+
+.product-desc {
+  padding-top: 3vw;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.product-button {
+  float: right;
 }
 
 /* Contact Card-deck Section */
 
 #contact {
-  padding: 100px 8%;
+  padding: 4% 8%;
+}
+
+.contact-title {
+  margin-bottom: 3%;
 }
 
 .contact-column { /* padding around the exterior of the contact cards */
-  padding: 3% 1.2%;
+  padding: 0 1.2%;
 }
 
 .card {
@@ -128,11 +161,11 @@ a:hover {
 }
 
 .contact-icon {
-  color: #FF4C68;
+  color: #6DCBA6;
 }
 
 .contact-icon:hover {
-  color: #EF8172;
+  color: #5DC69D;
 }
 
 .contact-desc {
@@ -142,35 +175,23 @@ a:hover {
 /* Footer Section */
 
 #footer .container-fluid {
-  padding: 2%;
+  padding: 5% 0 1%;
 }
 
 /* Responsive */
 
 @media (max-width: 1280px) {
-  .title-div {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-
-  h1 {
-    font-size: 2.6rem;
-  }
 
   .contact-div { /* size of contact icons */
     font-size: 0.75rem;
   }
 
   #contact {
-    padding: 100px 3.2%;
+    padding: 56px 3.2%;
   }
 
   .contact-column { /* padding around the exterior of the contact cards */
-    padding: 3% 0.4%;
+    padding: 0 0.4%;
   }
 }
 
@@ -179,27 +200,50 @@ a:hover {
     font-size: 1.6rem;
   }
 
-  #title {
+  .title-div {
     word-break: break-word;
-  }
-
-  .title-text {
     text-align: center;
   }
 
   .title-image {
+    position: static;
+    transform: rotate(0);
     padding-top: 64px;
     padding-bottom: 32px;
-    width: 240px;
+    width: 28vw;
+    min-width: 200px;
+  }
+
+  .product-image {
+    position: static;
+    padding-bottom: 24px;
+    width: 25vw;
+    min-width: 180px;
     height: auto;
   }
 
-  h1 {
-    font-size: 2rem;
+  .product-desc {
+    text-align: center;
   }
 
-  .contact-title {
-    margin-bottom: 48px;
+  .product-div {
+    left: 0;
+    height: auto;
+  }
+
+  .product-button {
+    float: none;
+  }
+
+  #products .container-fluid {
+    padding: 6% 0;
+  }
+
+  .btn {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
   }
 
   .contact-div { /* size of contact icons */
@@ -207,10 +251,10 @@ a:hover {
   }
 
   #contact {
-    padding: 100px 8%;
+    padding: 48px 8%;
   }
 
   .contact-column { /* padding around the exterior of the contact cards */
-    padding: 3% 1.2%;
+    padding: 0 1.2% 2.4%;
   }
 }

@@ -214,12 +214,17 @@ a:hover {
     min-width: 200px;
   }
 
+  #products .container-fluid {
+    padding: 96px 6%;
+  }
+
   .product-image {
     position: static;
     padding-bottom: 24px;
     width: 25vw;
+    height: 50vw;
     min-width: 180px;
-    height: auto;
+    min-height: 360px;
   }
 
   .product-desc {
@@ -228,15 +233,11 @@ a:hover {
 
   .product-div {
     left: 0;
-    height: auto;
+    height: 1%;
   }
 
   .product-button {
     float: none;
-  }
-
-  #products .container-fluid {
-    padding: 6% 0;
   }
 
   .btn {

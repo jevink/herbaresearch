@@ -54,11 +54,11 @@
 
       <!-- Title -->
       <div class="row title-div">
-        <div class="col-lg-6 align-self-center title-text"> <!-- add align-self-center to horizontally center text !-->
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <div class="col-lg-6 align-self-center title-text">
+          <h1>Harapan baru bagi para penderita kanker</h1>
         </div>
         <div class="col-lg-6">
-          <img class="title-image" src="images/pill-bottle.png" alt="placeholder">
+          <img class="title-image" src="images/pill-bottle.png" alt="Medicine Bottle">
         </div>
       </div>
     </div>
@@ -68,21 +68,21 @@
   <!-- Features -->
 
   <section id="features" class="uncolored-section">
-    <div class="row container-fluid">
+    <div class="row container-fluid mx-auto">
       <div class="col-lg-4 feature-box">
         <i class="fas fa-leaf fa-4x feature-icon"></i>
-        <h3>All Natural</h3>
-        <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>100% Alami</h3>
+        <p class="feature-desc">Formulasi tanaman obat yang aman untuk dikonsumsi karena tidak memberikan efek samping.</p>
       </div>
       <div class="col-lg-4 feature-box">
         <i class="fas fa-bullseye fa-4x feature-icon"></i>
-        <h3>Elite Clientele</h3>
-        <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>Pilihan Baru</h3>
+        <p class="feature-desc">Pengobatan alternatif bagi para penderita kanker yang "tidak ingin", "tidak bisa", "akan", "sedang", atau "telah" menjalankan kemoterapi.</p>
       </div>
       <div class="col-lg-4 feature-box">
-        <i class="fas fa-check-circle fa-4x feature-icon"></i>
-        <h3>Guaranteed to Work</h3>
-        <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <i class="fas fa-vial fa-4x feature-icon"></i>
+        <h3>Teruji</h3>
+        <p class="feature-desc">Terdaftar di Badan POM RI sebagai Obat Tradisional Impor karena memiliki uji klinis, uji toksisitas dan Good Manufacturing Process.</p>
       </div>
     </div>
   </section>
@@ -98,15 +98,34 @@
         <li data-target="#carousel-products" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
-          <h1 style="padding-bottom: 1.6rem">Prostasol</h2>
-          <img src="images/pill-bottle.png" alt="placeholder">
+
+        <div class="carousel-item active container-fluid row mx-auto">
+          <div class="col-lg-6">
+            <img class="product-image" src="images/prostasol.png" alt="Prostasol Bottle">
+          </div>
+
+          <div class="col-lg-6 product-div">
+            <h1 class="product-desc">Formulasi alami untuk pembesaran dan kanker prostat.</h1>
+            <form method="get" action="brochures/prostasol.pdf">
+               <button type="submit" class="btn btn-dark product-button">Baca Selengkapnya <i class="fas fa-download"></i></button>
+            </form>
+          </div>
         </div>
-        <div class="carousel-item container-fluid">
-          <h1 style="padding-bottom: 1.6rem">Angiostop</h1>
-          <img src="images/pill-bottle.png" alt="placeholder">
+
+        <div class="carousel-item container-fluid row mx-auto">
+          <div class="col-lg-6">
+            <img class="product-image" src="images/angiostop.png" alt="Angiostop Bottle">
+          </div>
+
+          <div class="col-lg-6 product-div">
+            <h1 class="product-desc">Pengobatan pilihan bagi para penderita kanker.</h1>
+            <form method="get" action="brochures/angiostop.pdf">
+               <button type="submit" class="btn btn-dark product-button">Baca Selengkapnya <i class="fas fa-download"></i></button>
+            </form>
+          </div>
         </div>
       </div>
+
       <a class="carousel-control-prev" href="#carousel-products" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -121,53 +140,80 @@
 
   <!-- Contact -->
 
-  <section id="contact" class="uncolored-section">
+  <section class="uncolored-section">
 
-    <h1 class="contact-title">Contact Us</h1>
+    <div id="contact">
+      <h1 class="contact-title">Contact Us</h1>
 
-    <div class="row card-deck">
-      <div class="col-lg-4 contact-column">
-        <div class="card">
-          <div class="card-body media">
-            <div class="contact-div">
-              <i class="mr-3 fas fa-phone fa-4x contact-icon"></i>
+      <div class="row card-deck">
+        <div class="col-lg-4 contact-column">
+          <div class="card h-100">
+            <div class="card-body media">
+              <div class="align-self-center mx-auto contact-div">
+                <i class="mr-3 fas fa-phone fa-4x contact-icon"></i>
+              </div>
+              <div class="align-self-center media-body contact-desc">
+                <h3 class="card-title">Give us a call</h3>
+                <a class="card-text" href="tel:+62217252511">+6221-725-2511</a>
+              </div>
             </div>
-            <div class="align-self-center media-body contact-desc">
-              <h3 class="card-title">Give us a call</h3>
-              <a class="card-text" href="tel:+628123456789">+628123456789</a>
+            <div class="card-body media">
+              <div class="align-self-center mx-auto contact-div">
+                <i class="mr-3 fab fa-whatsapp fa-4x contact-icon"></i>
+              </div>
+              <div class="align-self-center media-body contact-desc">
+                <h3 class="card-title">Text us via WhatsApp</h3>
+                <a class="card-text" href="https://api.whatsapp.com/send?phone=628129001155">+628129-001155</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 contact-column">
+          <div class="card h-100">
+            <div class="card-body media">
+              <div class="align-self-center mx-auto contact-div">
+                <i class="mr-3 fas fa-map-marker-alt fa-4x contact-icon"></i>
+              </div>
+              <div class="align-self-center media-body contact-desc">
+                <h3 class="card-title mt-0">Visit Us</h3>
+                <p class="card-text mb-0">Jl. Sultan Iskandar Muda 8H</p>
+                <p class="card-text mb-0">Jakarta 12310</p>
+              </div>
+            </div>
+
+            <div class="card-body media">
+              <div class="align-self-center mx-auto contact-div">
+                <i class="mr-3 fas fa-clock fa-4x contact-icon"></i>
+              </div>
+              <div class="align-self-center media-body contact-desc">
+                <h3 class="card-title mt-0">Business Hours</h3>
+                <p class="card-text mb-0">Mon - Fri: 9am - 5pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 contact-column">
+          <div class="card h-100">
+            <div class="card-body media">
+              <div class="align-self-center mx-auto contact-div">
+                <i class="mr-3 fas fa-shopping-cart fa-4x contact-icon"></i>
+              </div>
+              <div class="align-self-center media-body contact-desc">
+                <h3 class="card-title mt-0">Shop on Tokopedia</h3>
+                <a class="card-text mb-0" href="https://www.tokopedia.com/tbali-1">tokopedia.com/herbaresearch</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-4 contact-column">
-        <div class="card">
-          <div class="card-body media">
-            <div class="contact-div">
-              <i class="mr-3 fab fa-whatsapp fa-4x contact-icon"></i>
-            </div>
-            <div class="align-self-center media-body contact-desc">
-              <h3 class="card-title">Text us via WhatsApp</h3>
-              <a class="card-text" href="https://api.whatsapp.com/send?phone=628123456789">+628123456789</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 contact-column">
-        <div class="card">
-          <div class="card-body media">
-            <div class="contact-div">
-              <i class="mr-3 fas fa-shopping-cart fa-4x contact-icon"></i>
-            </div>
-            <div class="align-self-center media-body contact-desc">
-              <h3 class="card-title mt-0">Shop on Tokopedia</h3>
-              <a class="card-text mb-0" href="https://www.tokopedia.com/tbali-1">tokopedia.com/herbaresearch</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <!--  Embedded Google Maps -->
+    <div class="media-body">
+      <iframe width="100%" height="512px" src="https://maps.google.com/maps?q=Herba%20Research%20Jl.%20Sultan%20Iskandar%20Muda%20&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0">
+      </iframe>
     </div>
 
   </section>
